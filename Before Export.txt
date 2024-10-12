@@ -1,0 +1,16 @@
+Before Export
+0. Find substring "defined" and get "category" (e.g. search for RFI/RFA + 6 remaining characters)
+1. Create 1 hashmap of internal senders
+2. Create 1 Dictionary<string email, replacement>
+
+
+During Export
+0. Define base folder based on category
+1. Check sender, is it internal sender
+	If so, create date time - fr (...)	
+	if not, goto 2. 
+
+2. Check to recipient, whether they fall under email/domain to be replaced
+	If so, create date time - to replacement
+	If not, create date time - to person name
+
